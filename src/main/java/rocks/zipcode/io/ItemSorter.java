@@ -1,5 +1,7 @@
 package rocks.zipcode.io;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 
 /**
@@ -12,7 +14,9 @@ public class ItemSorter {
     }
 
     public Item[] sort(Comparator<Item> comparator) {
-
-        return null;
+        Arrays.sort(items, comparator);
+        //sort the items list with comparator that is passed in through the method params
+        //and then after sorted, returns items
+        return items;
     }
 }
